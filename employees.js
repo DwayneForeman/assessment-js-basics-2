@@ -100,8 +100,8 @@ empTwo.name = "Nick";
 
 class Manager extends Employee {
   constructor(name, shifts, employees) {
-    this.employees = employees;
     super(name, shifts);
+    this.employees = employees;
   }
 
   getEmployees() {
@@ -126,11 +126,9 @@ class Manager extends Employee {
 
 //CODE HERE
 
-const manager = new Manager(
-  "Winston",
-  "weekday mornings, weekday afternoons",
-  "Cece and Schmidt"
-);
+const manager = new Manager("Winston", "weekday mornings, weekday afternoons", [
+  "Cecil, Schmidt",
+]);
 
 /*
     Call the `getEmployees` method on the
@@ -159,4 +157,4 @@ manager.addEmployee("Coach");
 
 //CODE HERE
 
-manager.getEmployees;
+manager.getEmployees();
